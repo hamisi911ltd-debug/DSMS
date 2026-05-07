@@ -1,13 +1,12 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [vue()],
   build: {
     outDir: "dist",
-    // Ensure React is bundled (no external dependencies)
     rollupOptions: {
-      // Remove any external configurations that might exclude React
+      // Remove any external configurations that might exclude Vue
     }
   },
 });

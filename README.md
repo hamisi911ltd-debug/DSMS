@@ -9,15 +9,15 @@ A modern, responsive web application for managing driving school operations with
 - 🔐 **Authentication System**: Role-based access control
 - 🎯 **Dashboard**: Comprehensive overview for students, instructors, and admins
 - 🌙 **Theme Toggle**: Switch between light and dark modes
-- ⚡ **Fast Performance**: Built with Vite and React
+- ⚡ **Fast Performance**: Built with Vue 3 and Vite
 
 ## Tech Stack
 
-- **Frontend**: React 18, Vite
+- **Frontend**: Vue 3, Vite
 - **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Routing**: React Router DOM
-- **State Management**: React Context
+- **Icons**: Lucide Vue Next
+- **Routing**: Vue Router
+- **State Management**: Pinia
 
 ## Getting Started
 
@@ -66,8 +66,9 @@ Use any email and password to login. The system will automatically assign you a 
 
 ```
 src/
-├── components/          # Reusable UI components
-├── context/            # React context providers
+├── components/          # Reusable Vue components
+├── stores/             # Pinia stores for state management
+├── router/             # Vue Router configuration
 ├── pages/              # Page components
 │   ├── customer/       # Public pages (login, splash)
 │   ├── student/        # Student dashboard
@@ -75,6 +76,15 @@ src/
 │   └── instructor/     # Instructor dashboard
 └── utils/              # Utility functions
 ```
+
+## Migration from React
+
+This project was successfully migrated from React to Vue 3 for better Cloudflare Pages compatibility:
+
+- **React Context** → **Pinia Stores**
+- **React Router** → **Vue Router**
+- **JSX Components** → **Vue Single File Components**
+- **React Hooks** → **Vue Composition API**
 
 ## Contributing
 
