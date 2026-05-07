@@ -5,5 +5,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "dist",
+    // Ensure React is bundled (no external dependencies)
+    rollupOptions: {
+      // Remove any external configurations that might exclude React
+    }
   },
 });
